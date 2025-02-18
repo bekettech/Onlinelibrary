@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Digital Library</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search books by title or author...">
+            </div>
+        </header>
+
+        <main>
+            <div class="book-grid" id="bookGrid">
+                <!-- Books will be dynamically inserted here -->
+            </div>
+
+            <div class="book-reader" id="bookReader" style="display: none;">
+                <button class="back-button" onclick="closeReader()">← Back</button>
+                <div class="book-content" id="bookContent"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
